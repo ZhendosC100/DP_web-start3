@@ -136,3 +136,83 @@
 
 .num_color
     color: $main-color
+
+// --------------### MEDIA max-width: 1000px ###-------------------//
+
+@media (max-width: 1000px)
+    .basket
+        max-width: 800px 
+    .main
+        &__box
+            &_wrapper
+                position: relative
+                flex-direction: column
+                margin-bottom: 0
+                max-width: 505px
+                height: 177px
+            &_info
+                &__name
+                    margin-bottom: 10px
+                &__attrubute
+                    margin-bottom: 10px
+                &__number
+                    margin-bottom: 10px
+                &__price
+                    margin-bottom: 10px
+                &__error
+                    position: absolute
+                    top: 0
+                    right: 0
+
+// --------------### MEDIA max-width: 830px ###-------------------//
+
+@media (max-width: 830px)
+    .basket
+        max-width: 600px 
+    .main
+        &__box
+            &_wrapper
+                max-width: 336px
+
+// --------------### MEDIA max-width: 620px ###-------------------//
+
+@media (max-width: 620px)
+    .basket
+        max-width: 596px 
+        min-height: 545px
+        &-main
+            margin-bottom: -42px
+            padding: 17px 0px 25px 65px
+        &-header
+            padding: 0 13px 0 20px
+        &__box
+            &_wrapper
+                padding-top: 8px
+        &-footer
+            margin-top: 21px
+        &__total_btns 
+            height: 61px
+    .main
+        &__value
+            margin-top: 6px
+        &__box
+            &_wrapper
+                max-width: 331px
+                margin-bottom: 81px
+                padding-top: 7px
+            &_footer
+                &__info
+                   padding-right: 25px 
+            &_info
+                &__name
+                    margin-bottom: 22px
+                &__attrubute
+                    margin-bottom: 15px
+                &__number
+                    margin-bottom: 16px
+                &__price
+                    margin-bottom: 22px
+                &__error
+                    top: -14px
+                    right: 28px
+            

@@ -2,11 +2,29 @@
     box-sizing: border-box
     color: $text-color
 
+@mixin flex_center
+    display: flex
+    justify-content: space-between
+    align-items: center
+
 body
     @include regular
+
+.container
+    width: 1140px
 
 .btn
     border-radius: 30px
     outline: none
     &:hover
         cursor: pointer
+
+.aside_shadow
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 7
+    width: 100%
+    height: 100vh
+    background: rgba(0, 0, 0, 0.3)

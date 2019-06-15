@@ -40,6 +40,10 @@ body {
   font-family: "OpenSans-Regular";
 }
 
+.container {
+  width: 1140px;
+}
+
 .btn {
   border-radius: 30px;
   outline: none;
@@ -49,6 +53,84 @@ body {
   cursor: pointer;
 }
 
+.aside_shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 30px 0 32px 0;
+  height: 117px;
+}
+
+.navbar-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 325px;
+}
+
+.navbar-info__numbers_tel {
+  display: block;
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #393939;
+}
+
+.navbar-info__btn {
+  width: 142px;
+  height: 36px;
+  border: 1px solid #00b5ee;
+  background-color: #ffffff;
+  font-family: "OpenSans-Regular";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #00b5ee;
+}
+
+.navbar-info__btn:hover {
+  background-color: #00b5ee;
+  color: white;
+}
+
+.navbar-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+}
+
 .basket {
   display: none;
   position: fixed;
@@ -56,6 +138,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 8;
   width: 977px;
   min-height: 488px;
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);

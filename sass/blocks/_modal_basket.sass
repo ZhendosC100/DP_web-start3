@@ -1,0 +1,138 @@
+.basket
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 977px
+    min-height: 488px
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.28)
+    border: 1px solid #f1d6da
+    background-color: #ffffff
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 58px
+        padding: 0 35px 0 30px
+        background-color: $main-color
+        &__title,
+        &__close
+            +bold
+            display: block
+            font-size: 16px
+            // font-weight: 700
+            line-height: 17px
+            color: white
+        &__close
+            +regular
+            font-size: 23px
+    &-main
+        display: flex
+        justify-content: space-between
+        margin-bottom: -21px
+        padding: 33px 30px 25px 30px
+    &__total
+        &_info
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            padding-right: 28px
+            width: 100%
+            height: 65px
+            +semibold
+            font-size: 16px
+            font-weight: 400
+            line-height: 17px
+            background-color: lighten( $main-color, 47% )
+    &__total_btns
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 86px
+        padding-right: 29px
+        padding-left: 26px
+    &__continue
+        width: 237px
+        height: 49px
+        +semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+        color: #2c2c2c
+        border: 1px solid $text-color
+        background-color: white
+        &:hover
+            border: 1px solid $main-color
+            background-color: $main-color
+            color: white
+    &__end
+        width: 196px
+        height: 47px
+        +semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+        color: white
+        background-color: $main-color
+        border: 1px solid $main-color
+        &:hover
+            color: #2c2c2c
+            border: 1px solid $text-color
+            background-color: white
+
+
+
+.total_color
+    display: inline-block
+    margin-left: 2px
+    font-size: 24px
+    color: $main-color
+
+.main
+    &__title
+        @include semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 17px
+    &__value
+        margin-top: 3px
+        +regular
+        font-size: 15px
+        font-weight: 500
+        line-height: 17px
+    &__box
+        &_wrapper
+            display: flex
+            padding-top: 9px
+            margin-bottom: 106px
+            width: 725px
+            height: 48px
+        &_info
+            &__name
+                width: 256px
+            &__attrubute
+                width: 167px
+            &__number
+                width: 127px
+            &__price
+                width: 174px
+            &__error
+                display: flex
+                align-items: center
+                padding-top: 11px
+            &__img
+                display: block
+                width: 30px
+                height: 30px
+                margin-right: -4px
+        &_footer
+            width: 100%
+            text-align: end
+            &__info
+                +semibold
+                font-size: 16px
+                line-height: 17px
+
+.num_color
+    color: $main-color

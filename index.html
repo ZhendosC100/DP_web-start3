@@ -9,6 +9,42 @@
     <title>Diplom</title>
 </head>
 <body>
+  <!-- ### Navbar ### -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-info">
+        <img src="img/navbar/phone.png" alt="phone" class="navbar-info__img">
+        <div class="navbar-info__numbers"></div>
+        <!-- /.navbar-info__numbers -->
+        <button class="btn navbar-info__btn"></button>
+        <!-- /.btn navbar-info__btn -->
+      </div>
+      <!-- /.navbar-info -->
+      <div class="navbar-logo">
+        <img src="img/navbar/logo.png" alt="logo" class="navbar-logo_img">
+      </div>
+      <!-- /.navbar-logo -->
+      <div class="navbar-client">
+        <div class="icon">
+          <img src="img/navbar/dress.png" alt="dress" class="icon__img">
+          <p class="icon__info">Вход</p>
+        </div>
+        <div class="icon">
+          <img src="img/navbar/heart.png" alt="heart" class="icon__img">
+          <p class="icon__info">Избранное</p>
+        </div>
+        <div class="icon">
+          <img src="img/navbar/basket.png" alt="basket" class="icon__img">
+          <p class="icon__info">Корзина</p>
+          <p class="circle">1</p>
+          <!-- /.circle -->
+        </div>
+      </div>
+      <!-- /.navbar-client -->
+    </div>
+    <!-- /.container navbar-container -->
+  </nav>
+  <!-- /.navbar -->
 
   <!-- ### Modals ### -->
 
@@ -16,7 +52,7 @@
     <aside class="basket">
         <div class="basket-header">
                 <span class="basket-header__title">Товар добавлен корзину</span>
-                <span class="close basket-header__close">&times</span>
+                <span class="close basket-header__close" title="close">&times</span>
         </div>
         <!-- /.basket-header -->
 
@@ -57,7 +93,7 @@
                   </div>
                   <!-- /.main__box_info__price -->
                   <div class="main__box_info__error">
-                    <img src="img/modal/close_red.svg" alt="close_icon" class="main__box_info__img">
+                    <img src="img/modal/close_red.svg" alt="close_icon" class="main__box_info__img" title="cancel">
                   </div>
                   <!-- /.main__box_info__error -->
             </div>
@@ -94,6 +130,13 @@
     <aside></aside>
     <aside></aside>
     <aside></aside>
-    
+
+    <button class="modal_basket">Modal Basket</button>
+
+    <!-- ### Scripts ### -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+		</script>
+    <script src="js/main.js"></script>
 </body>
 </html>

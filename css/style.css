@@ -50,6 +50,7 @@ body {
 }
 
 .basket {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -90,6 +91,11 @@ body {
 .basket-header__close {
   font-family: "OpenSans-Regular";
   font-size: 23px;
+}
+
+.basket-header__close:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .basket-main {
@@ -237,6 +243,10 @@ body {
   width: 30px;
   height: 30px;
   margin-right: -4px;
+}
+
+.main__box_info__img:hover {
+  cursor: pointer;
 }
 
 .main__box_footer {

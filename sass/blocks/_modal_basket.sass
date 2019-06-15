@@ -1,4 +1,5 @@
 .basket
+    display: none
     position: fixed
     top: 50%
     left: 50%
@@ -27,6 +28,9 @@
         &__close
             +regular
             font-size: 23px
+            &:hover
+                cursor: pointer
+                color: red
     &-main
         display: flex
         justify-content: space-between
@@ -126,6 +130,8 @@
                 width: 30px
                 height: 30px
                 margin-right: -4px
+                &:hover
+                    cursor: pointer
         &_footer
             width: 100%
             text-align: end

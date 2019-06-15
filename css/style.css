@@ -118,7 +118,27 @@ body {
   color: white;
 }
 
+.navbar-logo {
+  width: 164px;
+  margin-left: -101px;
+}
+
 .navbar-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 215px;
+}
+
+.icon {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +148,45 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 220px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 7px;
+}
+
+.icon__info {
+  margin: 0;
+  font-family: "OpenSans-Semibold";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #393939;
+}
+
+.bas_correct {
+  margin-bottom: -4px;
+}
+
+.circle {
+  position: absolute;
+  top: -13px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23px;
+  height: 23px;
+  padding-left: 7px;
+  border-radius: 50%;
+  color: white;
+  background-color: #ffc740;
 }
 
 .basket {

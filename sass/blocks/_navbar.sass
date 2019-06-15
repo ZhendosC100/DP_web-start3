@@ -28,7 +28,39 @@
             &:hover
                 background-color: $main-color
                 color: white
-
+    &-logo
+        width: 164px
+        margin-left: -101px
     &-client
-        +flex_center
-        width: 220px
+        display: flex
+        justify-content: space-between
+        padding-right: 2px
+        align-items: flex-end
+        width: 215px
+
+.icon
+    position: relative
+    +flex_center
+    flex-direction: column
+    padding-top: 7px
+    &__info
+        margin: 0
+        +semibold
+        font-size: 12px
+        font-weight: 400
+        line-height: 21px
+        color: $text-color
+.bas_correct
+    margin-bottom: -4px
+
+.circle
+    position: absolute
+    top: -13px
+    right: 0
+    +flex_center
+    width: 23px
+    height: 23px
+    padding-left: 7px
+    border-radius: 50%
+    color: white
+    background-color: #ffc740

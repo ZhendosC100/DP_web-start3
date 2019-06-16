@@ -1,0 +1,68 @@
+.sale
+    width: 100%
+    height: 560px
+    &-container
+        text-align: center
+        padding-top: 54px
+        padding-bottom: 54px
+    &__title
+        margin-top: -2px
+        margin-bottom: 17px
+        +semibold
+        font-size: 26px
+        font-weight: 400
+        line-height: 21px
+    &__line
+        margin: 0 auto
+        margin-bottom: 24px
+        width: 66px
+        height: 1px
+        border-top: 2px solid #dddddd
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        &_box
+            position: relative
+            width: 263px
+            height: 386px
+            padding: 6px 18px 22px 18px
+            border-radius: 5px
+            border: 1px solid #e8e8e8
+    &__free
+        position: absolute
+        top: 17px
+        left: 17px
+        &_new
+            position: absolute
+            top: 62px
+            left: 17px
+    &__text
+        &_title
+            margin-top: 19px
+            margin-bottom: -4px
+            +semibold
+            font-size: 16px
+            font-weight: 400
+            line-height: 16px
+        &_subtitle
+            margin-bottom: 10px
+            +regular
+            font-size: 13px
+            color: #666666
+.longslv
+    margin-left: -14px
+.price
+    &_buy
+        +flex_center
+        width: 100%
+        &_info
+            +regular
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+            color: $text-color
+    &__bold
+        +bold_roboto
+        font-size: 19px
+        font-weight: 700
+        line-height: 24px

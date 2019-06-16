@@ -78,13 +78,13 @@
         font-size: 16px
         font-weight: 400
         line-height: 18px
-        color: white
-        background-color: $main-color
-        border: 1px solid $main-color
+        color: #2c2c2c
+        border: 1px solid $text-color
+        background-color: white
         &:hover
-            color: #2c2c2c
-            border: 1px solid $text-color
-            background-color: white
+            color: white
+            background-color: $main-color
+            border: 1px solid $main-color
 
 
 
@@ -223,3 +223,77 @@
                     top: -14px
                     right: 28px
             
+// --------------### MEDIA max-width: 599px ###-------------------//
+
+@media (max-width: 599px)
+    .basket
+        position: absolute
+        max-width: 400px 
+        top: 50%//!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        left: 50%//!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        transform: translate(-50%, -40%)///!!!!!!!!!!!!!
+        &-main
+            flex-direction: column
+            width: 380px
+        &__total
+            &_btns
+                height: 97px
+                flex-wrap: wrap-reverse
+                justify-content: center
+                padding-left: 0
+                padding-right: 0
+        &__total
+            &_info
+                margin-bottom: 28px
+        &__continue
+            margin-bottom: 7px
+        &__end
+            margin-bottom: 10px
+
+    .main
+        &__box
+            &_img
+                display: flex
+                justify-content: center
+                width: 275px
+            &_info
+                &__error
+                    top: -198px
+
+// --------------### MEDIA max-width: 420px ###-------------------//
+
+@media (max-width: 420px)
+    .basket
+        width: 290px
+        height: 808px
+        transform: translate(-50%, -30%)
+        &-main
+            padding: 17px 0px 25px 23px
+            width: 280px
+        &__total
+            &_info
+                margin-bottom: 21px
+                padding-right: 14px
+            &_btns
+                height: 130px
+        &_end
+            margin-bottom: 11px
+
+    .main
+        &__box
+            &_wrapper
+                max-width: 280px
+                margin-bottom: 0
+                height: 232px
+            &_img
+                margin-bottom: 20px
+                width: 254px
+            &_info
+                &__error
+                    top: -223px
+                    right: 30px
+            &_footer
+                &__info
+                    padding-right: 5px
+                    margin-top: 9px
+                    margin-bottom: 24px

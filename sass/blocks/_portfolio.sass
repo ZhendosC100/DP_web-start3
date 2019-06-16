@@ -5,6 +5,8 @@
     &__wrapper
         display: flex
         justify-content: space-between
+        &_active
+            display: none
     &__left
         &_down
             +flex_center
@@ -46,3 +48,37 @@
         color: $text-color
         background-color: rgb(255, 255, 255)
         opacity: 0.6
+
+// --------------### MEDIA max-width: 1170px ###-------------------//
+
+@media (max-width: 1170px)
+    .portfolio
+        &__wrapper
+            display: none
+            &_active
+                display: flex
+                justify-content: space-around
+                flex-wrap: wrap
+        &__left
+            &_box
+                width: 290px
+                height: 254px
+                margin-bottom: 10px
+
+// --------------### MEDIA max-width: 750px ###-------------------//
+
+@media (max-width: 750px)
+
+    .portfolio
+        &__wrapper
+            &_active
+               justify-content: space-between
+        &__left
+            &_box 
+                margin-bottom: 16px
+        &__info
+            height: 59px
+            font-size: 16px
+            font-weight: 400
+            line-height: 16.31px
+

@@ -837,6 +837,23 @@ input {
   }
 }
 
+.promo {
+  height: 287px;
+}
+
+.promo-container {
+  text-align: center;
+  height: 100%;
+  background: url("../img/promo/background_promo.png") no-repeat;
+}
+
+.promo_line {
+  margin: 0 auto;
+  width: 59px;
+  height: 2px;
+  border-top: 2px solid #00b5ee;
+}
+
 .basket {
   display: none;
   position: fixed;

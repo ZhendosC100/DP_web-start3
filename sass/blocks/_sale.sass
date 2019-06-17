@@ -66,3 +66,51 @@
         font-size: 19px
         font-weight: 700
         line-height: 24px
+.swiper-container
+    display: none
+
+
+
+    // --------------### MEDIA max-width: 751px ###-------------------//
+
+@media (max-width: 751px)
+    .sale
+        &-container
+            max-width: 595px
+            padding-top: 23px
+        &__title
+            margin-bottom: 15px
+            font-size: 22px
+            font-weight: 400
+            line-height: 21px
+        &__line
+            margin-bottom: 18px
+    .slider_off
+        display: none
+
+    .swiper-container
+        position: relative
+        display: block
+        
+    .swiper-wrapper
+        margin-left: 18px
+
+    .sale_arrows
+        position: relative
+
+    .prev_arrow
+        position: absolute
+        top: -216px
+        left: -17px
+        outline: none
+        z-index: 6
+        &:hover
+            cursor: pointer
+    .next_arrow
+        position: absolute
+        top: -216px
+        right: -14px
+        outline: none
+        z-index: 6
+        &:hover
+            cursor: pointer

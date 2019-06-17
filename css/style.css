@@ -752,6 +752,59 @@ input {
   line-height: 24px;
 }
 
+.swiper-container {
+  display: none;
+}
+
+@media (max-width: 751px) {
+  .sale-container {
+    max-width: 595px;
+    padding-top: 23px;
+  }
+  .sale__title {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .sale__line {
+    margin-bottom: 18px;
+  }
+  .slider_off {
+    display: none;
+  }
+  .swiper-container {
+    position: relative;
+    display: block;
+  }
+  .swiper-wrapper {
+    margin-left: 18px;
+  }
+  .sale_arrows {
+    position: relative;
+  }
+  .prev_arrow {
+    position: absolute;
+    top: -216px;
+    left: -17px;
+    outline: none;
+    z-index: 6;
+  }
+  .prev_arrow:hover {
+    cursor: pointer;
+  }
+  .next_arrow {
+    position: absolute;
+    top: -216px;
+    right: -14px;
+    outline: none;
+    z-index: 6;
+  }
+  .next_arrow:hover {
+    cursor: pointer;
+  }
+}
+
 .basket {
   display: none;
   position: fixed;

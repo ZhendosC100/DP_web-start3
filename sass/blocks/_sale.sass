@@ -1,6 +1,8 @@
 .sale
     width: 100%
     height: 560px
+    &_arrows
+        display: none
     &-container
         text-align: center
         padding-top: 54px
@@ -70,6 +72,16 @@
     display: none
 
 
+    // --------------### MEDIA max-width: 1180px ###-------------------//
+
+@media (max-width: 1180px)
+    .sale
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: space-around
+            &_box
+                margin-bottom: 10px
+
 
     // --------------### MEDIA max-width: 751px ###-------------------//
 
@@ -85,6 +97,8 @@
             line-height: 21px
         &__line
             margin-bottom: 18px
+        &_arrows
+            display: block
     .slider_off
         display: none
 

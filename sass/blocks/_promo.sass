@@ -1,7 +1,7 @@
 .promo
-    height: 287px
     &-container
         padding-top: 41px
+        padding-bottom: 40px
         box-sizing: border-box
         text-align: center
         height: 100%
@@ -86,6 +86,49 @@
             &_btn
                 margin-right: 27px
 
+    // --------------### MEDIA max-width: 649px ###-------------------//
+
+@media (max-width: 649px)
+    .promo
+        &-container
+            max-width: 596px
+
+    // --------------### MEDIA max-width: 615px ###-------------------//
+
+@media (max-width: 615px)
+    .promo
+        &-container
+            max-width: 400px
+            background-size: cover
+        &__form
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 290px
+            &_input
+                padding-left: 0
+                text-align: center
+                margin-bottom: 11px
+            &_btn
+                margin-right: 0
+
+    // --------------### MEDIA max-width: 420px ###-------------------//
+
+@media (max-width: 420px)
+    .promo
+        &-container
+            max-width: 290px
+            padding-top: 35px
+        &__subtitle
+            width: 243px
+            margin: 0 auto
+            margin-top: 20px
+            margin-bottom: 24px
+            line-height: 18px
+        &__form
+            margin-bottom: -2px
+
+            
 
         
         

@@ -113,7 +113,35 @@
         &_img
             width: 31px
             height: 31px
+    &__comment
+        &_vk, &_fb, &_inst
+            display: none
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: -83px
+            bottom: -53px
+            width: 196px
+            height: 40px
+            +semibold
+            font-size: 14px
+            font-weight: 400
+            line-height: 18px
+            color: $text-color
+            background-color: white
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.12)
+            &:after
+                content: ''
+                position: absolute
+                top: -4px
+                left: 48%
+                transform: rotate(45deg)
+                width: 9px
+                height: 9px
+                box-shadow: -4px -3px 5px rgba(0, 0, 0, 0.12)
+                background-color: white
     &__vk
+        position: relative
         background: url('../img/footer/vk_grey.svg')
         background-size: 100% 100%
         &:hover
@@ -121,6 +149,7 @@
             background: url('../img/footer/vk_blue.svg')
             background-size: 100% 100%
     &__facebook
+        position: relative
         background: url('../img/footer/fb_grey.svg')
         background-size: 100% 100%
         &:hover
@@ -128,13 +157,34 @@
             background: url('../img/footer/fb_blue.svg')
             background-size: 100% 100%
     &__insta
+        position: relative
         background: url('../img/footer/instagram_grey.svg')
         background-size: 100% 102%
         &:hover
             cursor: pointer
             background: url('../img/footer/instagram_blue.svg')
             background-size: 100% 102%
+    
+    &__like
+        padding-right: 9px
+        border-right: 2px solid $text-color
+    &_amount
+        padding-left: 9px
 
+    
+    // --------------### MEDIA min-width: 992px ###-------------------//
+
+@media (min-width: 992px)
+    .join
+        &__vk
+            &:hover .join__comment_vk
+                display: flex
+        &__facebook
+            &:hover .join__comment_fb
+                display: flex
+        &__insta
+            &:hover .join__comment_inst
+                display: flex
     // --------------### MEDIA max-width: 1170px ###-------------------//
 
 @media (max-width: 1170px)

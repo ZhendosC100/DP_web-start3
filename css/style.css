@@ -1663,7 +1663,45 @@ a {
   height: 31px;
 }
 
+.join__comment_vk, .join__comment_fb, .join__comment_inst {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: -83px;
+  bottom: -53px;
+  width: 196px;
+  height: 40px;
+  font-family: "OpenSans-Semibold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #393939;
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+}
+
+.join__comment_vk:after, .join__comment_fb:after, .join__comment_inst:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 48%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 9px;
+  height: 9px;
+  -webkit-box-shadow: -4px -3px 5px rgba(0, 0, 0, 0.12);
+          box-shadow: -4px -3px 5px rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
 .join__vk {
+  position: relative;
   background: url("../img/footer/vk_grey.svg");
   background-size: 100% 100%;
 }
@@ -1675,6 +1713,7 @@ a {
 }
 
 .join__facebook {
+  position: relative;
   background: url("../img/footer/fb_grey.svg");
   background-size: 100% 100%;
 }
@@ -1686,6 +1725,7 @@ a {
 }
 
 .join__insta {
+  position: relative;
   background: url("../img/footer/instagram_grey.svg");
   background-size: 100% 102%;
 }
@@ -1694,6 +1734,33 @@ a {
   cursor: pointer;
   background: url("../img/footer/instagram_blue.svg");
   background-size: 100% 102%;
+}
+
+.join__like {
+  padding-right: 9px;
+  border-right: 2px solid #393939;
+}
+
+.join_amount {
+  padding-left: 9px;
+}
+
+@media (min-width: 992px) {
+  .join__vk:hover .join__comment_vk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .join__facebook:hover .join__comment_fb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .join__insta:hover .join__comment_inst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 1170px) {

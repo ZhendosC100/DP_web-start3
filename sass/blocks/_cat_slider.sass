@@ -122,4 +122,38 @@ span.swiper-pagination-bullet
 span.swiper-pagination-bullet-active
     border: 1px solid $main-color
     color: $main-color
+
+    // --------------### MEDIA max-width: 1169px ###-------------------//
+
+@media (max-width: 1169px)
+    .cat
+        &_pagination__wrapper
+            width: 100px
+            margin-left: -188px
+        &_arrows
+            width: 354px
+
+    // --------------### MEDIA max-width: 950px ###-------------------//
+
+@media (max-width: 950px)
+    div.cat
+        &_swiper-container
+            margin-left: 15px
+
+    // --------------### MEDIA max-width: 750px ###-------------------//
+
+@media (max-width: 750px)
+    .cat
+        &__next_arrow, &__prev_arrow
+            position: relative
+        &_arrows
+            margin-top: 1px
+            margin-bottom: 44px
+    div.cat_swiper-container
+        margin-left: 23px
+
+    div.hover_on
+        margin-right: 3px
+        margin-bottom: 23px
     
+

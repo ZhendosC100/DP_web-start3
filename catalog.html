@@ -3186,21 +3186,21 @@
         </div>
         <!-- /.swiper-container -->
         <div class="arrows cat_arrows">
-          <div class="prev_arrow cat__prev_arrow" title="prev">
-              <img src="img/catalog/arrow_prev.png" alt="left-arrow" class="cat__prev_arrow_img">
+          <div class="cat__prev_arrow" title="prev">
+            <img src="img/catalog/arrow_prev.png" alt="left-arrow" class="cat__prev_arrow_img">
           </div>
           <!-- Add Pagination -->
           <div class="cat_pagination__wrapper">
-              <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <!-- /.cat_pagination__wrapper -->
-          
+
           <!-- /.prev_arrow cat__prev_arrow -->
-          <div class="prev_arrow cat__next_arrow" title="next">
-              <img src="img/catalog/arrow_next.png" alt="right-arrow" class="cat__next_arrow_img">
+          <div class="cat__next_arrow" title="next">
+            <img src="img/catalog/arrow_next.png" alt="right-arrow" class="cat__next_arrow_img">
           </div>
           <!-- /.prev_arrow cat__next_arrow -->
-          
+
         </div>
 
         <!-- /.slider_on swiper-container-->
@@ -3411,7 +3411,7 @@
   <script>
     $(document).ready(function () {
       var swiper = new Swiper('.swiper-container', {
-        
+
         slidesPerView: 4,
         slidesPerColumn: 5,
         spaceBetween: 10,
@@ -3435,13 +3435,16 @@
 
 
         breakpoints: {
-          750: {
-            spaceBetween: 4,
+          1170: {
             slidesPerView: 2,
+            slidesPerColumn: 5,
+            width: 600,
           },
-          650: {
-            slidesPerView: 1,
-            spaceBetween: 50,
+          750: {
+            slidesPerView: 2,
+            slidesPerColumn: 5,
+            width: 575,
+            spaceBetween: 0
           },
           320: {
             slidesPerView: 1,

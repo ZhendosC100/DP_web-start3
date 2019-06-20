@@ -61,6 +61,9 @@
                 cursor: pointer
                 color: $main-color
 
+.hover__cat_wrapper > img.sale__img
+    margin-left: -9px
+
 .hover_on
     margin-bottom: 10px
     &:hover .hover__cat_item
@@ -156,4 +159,33 @@ span.swiper-pagination-bullet-active
         margin-right: 3px
         margin-bottom: 23px
     
+    // --------------### MEDIA max-width: 650px ###-------------------//
 
+@media (max-width: 650px)
+
+    div.cat_swiper-container
+        margin-left: 17%
+    .cat
+        &_pagination__wrapper
+            display: none
+
+    // --------------### MEDIA max-width: 435px ###-------------------//
+
+@media (max-width: 435px)
+
+    div.cat_swiper-container
+        margin-left: 9%
+
+    .cat
+        &_arrows
+            width: 254px
+            margin-top: 5px
+            margin-bottom: 48px
+
+    // --------------### MEDIA max-width: 370px ###-------------------//
+
+@media (max-width: 370px)
+    div.cat_swiper-container
+        margin-left: 4%
+    div.hover_on
+        margin-bottom: 13px

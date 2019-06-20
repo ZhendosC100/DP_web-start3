@@ -1,5 +1,6 @@
 .footer
     &-section
+        border-top: 1px solid lighten( $main-color, 42% )
         padding-top: 31px
         background-color: lighten( $main-color, 50% )
     &-container
@@ -55,8 +56,8 @@
         background-color: $main-color
         &:hover
             background-color: white
-            color: $text-color
-            border: 1px solid $text-color
+            color: $main-color
+            border: 1px solid $main-color
     &__tel
         margin-bottom: 12px
         margin-top: 16px
@@ -94,6 +95,9 @@
     &__subtitle
         margin-top: 30px
         margin-bottom: 13px
+    &__logo
+        width: 162px
+        height: 30px
 
 .join
     width: 150px
@@ -128,4 +132,49 @@
             cursor: pointer
             background: url('../img/footer/instagram_blue.svg')
             background-size: 100% 102%
+
+    // --------------### MEDIA max-width: 1170px ###-------------------//
+
+@media (max-width: 1170px)
+    .contact
+        margin-right: 75px
+        width: 194px
+    .cabinet
+        margin-right: 73px
+
+    // --------------### MEDIA max-width: 950px ###-------------------//
+
+@media (max-width: 950px)
+    .footer
+        // &-container
+        //     justify-content: center
+        &__join_wrapper
+            flex-wrap: wrap
+    .help
+        margin-right: 97px
+    .join
+        width: 100%
+    .cabinet
+        margin-right: 0
+
+    // --------------### MEDIA max-width: 751px ###-------------------//
+
+@media (max-width: 751px)
+    .footer
+        &-section
+            padding-top: 16px
+        &__join_wrapper
+            width: 162px
+    .contact
+        margin-right: 11px
+    .help
+        margin-right: 28px
+    .cabinet
+        margin-bottom: 15px
+        &__subtitle
+            margin-top: 22px
+    .join
+        &__social_wrapper
+            margin-left: 0
+
 

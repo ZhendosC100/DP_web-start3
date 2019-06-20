@@ -52,7 +52,11 @@
             font-weight: 500
             line-height: 21.47px
             color: white
-            background-color: #00b5ee
+            background-color: $main-color
+            &:hover
+                color: $main-color
+                background-color: white
+                border: 1px solid $main-color
     &_follow
         +regular
         margin-top: 25px
@@ -63,6 +67,8 @@
         text-transform: uppercase
     &__social_img
         margin-right: 3px
+        &:hover
+            cursor: pointer
     // --------------### MEDIA max-width: 751px ###-------------------//
 
 @media (max-width: 751px)

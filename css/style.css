@@ -1536,6 +1536,7 @@ a {
   margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 37px;
+  opacity: 0.6;
   text-align: center;
   font-family: "OpenSans-Regular";
   color: #393939;
@@ -1585,6 +1586,7 @@ a {
 }
 
 .contact__tel {
+  width: 131px;
   margin-bottom: 12px;
   margin-top: 16px;
   font-size: 16px;
@@ -1741,6 +1743,88 @@ a {
   }
   .join__social_wrapper {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 661px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact, .help, .cabinet, .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  .contact__link {
+    text-align: center;
+  }
+  .help__info {
+    text-align: center;
+  }
+  .cabinet__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-container {
+    width: 100%;
+    border-bottom: 1px solid #c5f1ff;
+    padding-bottom: 37px;
+  }
+  .footer__title {
+    margin-bottom: 0;
+  }
+  .footer__rights {
+    border-top: none;
+    width: 198px;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  .help__title {
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
+  .help_info {
+    line-height: 18px;
+  }
+  .help__garranty {
+    margin-bottom: 10px;
+  }
+  .contact__blog {
+    display: none;
+  }
+  .contact__tel {
+    margin-left: 1px;
+    line-height: 18px;
+  }
+  .cabinet__title {
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+  .cabinet__logo {
+    margin-top: 15px;
+  }
+  .join__social_wrapper {
+    margin-left: -3px;
   }
 }
 

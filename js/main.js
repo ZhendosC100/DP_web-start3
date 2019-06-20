@@ -2,7 +2,7 @@ $(document).ready( function(){
     let basket = $('.basket'),
         shadow = $('.aside_shadow'),
         close = $('.close');
-    $('.modal_basket').on('click', function(e){
+    $('.price_buy_btn__img').on('click', function(e){
         e.preventDefault();
         basket.show();
         shadow.show();

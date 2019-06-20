@@ -1,0 +1,37 @@
+.cat_select
+    &__title
+        margin-top: 9px
+        margin-bottom: 19px
+        +semibold
+        font-size: 26px
+        font-weight: 400
+        line-height: 21px
+    &__line
+        margin-bottom: 19px
+        width: 66px
+        height: 1px
+        border-top: 1px solid #dddddd
+    &__wrapper
+        +flex_center
+        margin-left: 2px
+        padding-bottom: 30px
+        width: 100%
+    &__box
+        +flex_center
+        padding-right: 11px
+        padding-left: 17px
+        width: 264px
+        height: 51px
+        border: 2px solid #95dbf1
+        &:hover
+            cursor: pointer
+        &:hover .cat_select__info
+            color: $main-color
+    &__info
+        +regular
+        color: $text-color
+        opacity: 0.7
+        font-size: 14px
+        font-weight: 300
+        line-height: 15px
+        

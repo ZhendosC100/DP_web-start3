@@ -1,0 +1,125 @@
+.hover__cat
+    &_item
+        display: none
+        position: absolute
+        top: -1px
+        left: -1px
+        width: 263px
+        height: 463px
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.12)
+        border: 1px solid #e8e8e8
+        background-color: white
+    &_change
+        +flex_center
+        &__number
+            +flex_center
+            padding-left: 15px
+            padding-right: 9px
+            width: 108px
+            height: 41px
+            border: 1px solid #95dbf1
+            background-color: #ffffff
+            &:hover
+                color: $main-color
+        &__color
+            +flex_center
+            padding-left: 6px
+            padding-right: 9px
+            width: 108px
+            height: 41px
+            border: 1px solid #95dbf1
+            background-color: #ffffff
+        &__info
+            &:hover
+                cursor: pointer
+                color: $main-color
+        &__text
+            &:hover
+                cursor: pointer
+                color: $main-color
+    &__like
+        display: flex
+        align-items: center
+        width: 100%
+        &_text
+            padding-left: 7px
+            padding-right: 21px
+            +regular
+            color: #2d2d2d
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+            &:hover
+                cursor: pointer
+                color: $main-color
+        &_buy
+            font-size: 13px
+            font-weight: 400
+            line-height: 17px
+            color: $text-color
+            &:hover
+                cursor: pointer
+                color: $main-color
+
+.hover_on
+    margin-bottom: 10px
+    &:hover .hover__cat_item
+        z-index: 7
+        display: flex
+        
+
+.hover
+    &_sale__text_title
+        text-align: center
+        margin: 0 auto
+        margin-top: 21px
+    &_sale__text_subtitle
+        text-align: center
+        margin: 0 auto
+        margin-top: 7px
+        margin-bottom: 9px
+
+
+//--------###### Slider ######-------//
+
+.cat
+    &_swiper-container
+        display: block
+        margin-left: 3px
+    &_arrows
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        margin-top: 17px
+        margin-bottom: 52px
+        width: 282px
+        z-index: -1
+    &__prev_arrow, &__next_arrow
+        display: flex
+        justify-content: center
+        align-items: center
+        outline: none
+        width: 32px
+        height: 31px
+        border: 1px solid #cecece
+        background-color: #ffffff
+        &:hover
+            border: 1px solid $main-color
+            cursor: pointer
+    &_pagination__wrapper
+        width: 100px
+        margin-left: -116px
+
+span.swiper-pagination-bullet
+    display: inline-block
+    margin: 0 2px
+    padding-top: 4px
+    width: 32px
+    height: 31px
+    border-radius: 1%
+    border: 1px solid #cecece
+    background-color: #ffffff
+span.swiper-pagination-bullet-active
+    border: 1px solid $main-color
+    color: $main-color
+    

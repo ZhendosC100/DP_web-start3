@@ -1,6 +1,7 @@
 .product
     &-container
         display: flex
+        padding-bottom: 60px
     &__cat_nav
         padding-bottom: 28px
     &_swiper-container
@@ -48,7 +49,7 @@
             cursor: pointer
     &__card
         width: 380px
-        height: 540px
+        // height: 540px
         margin-left: 55px
         margin-top: -3px
         &_title
@@ -164,4 +165,94 @@
         &_ss
             margin-right: 4px
             
+    // --------------### MEDIA max-width: 1169px ###-------------------//
+
+@media (max-width: 1169px)
+    .product
+        &-container
+            flex-wrap: wrap
+            justify-content: space-around
+        &__card
+            width: 50%
+
+    // --------------### MEDIA max-width: 950px ###-------------------//
+
+@media (max-width: 950px)
+    .product
+        &__card
+            width: 80%
+    // --------------### MEDIA max-width: 750px ###-------------------//
+
+@media (max-width: 750px)
+    div.product_swiper-container
+        width: 441px
+        height: 438px
+    .product
+        &__slider
+            padding-top: 27px
+            margin-left: 9px
+            &_img
+                width: 343px
+                height: 342px
+                transform: translate(-55%, -50%)
+        &__slide_preview
+            display: none
+        &_arrows
+            position: relative
+            margin: 0 auto
+            width: 50%
+            justify-content: center
+        &__arrow_prev 
+            position: absolute
+            bottom: 194px
+            left: -201px
+            width: 48px
+            height: 48px
+            background: url('../img/sale/left-arrow.png')
+        &__arrow_next
+            position: absolute
+            bottom: 195px
+            right: -188px
+            width: 48px
+            height: 48px
+            background: url('../img/sale/right-arrow.png')
+        &__card
+            width: 100%
+            margin-left: 4px
+            padding-top: 12px
+            &_title
+                margin-bottom: 13px
+                +regular
+                font-size: 18px
+                font-weight: 700
+                line-height: 21px
+            &_availabel
+                margin-bottom: 12px
+            &_star
+                margin-right: -3px
+                &__box
+                    margin-bottom: -3px
+            &_change
+                &__color_box
+                    width: 291px
+                    height: 51px
+            &_change__size
+                margin-bottom: 15px
+            &_price__box
+                margin-top: 15px
+            &_btn__box
+                width: 63%
+            &_heart__info
+                padding-bottom: 5px
+            &_ss__box
+                display: none
+
+    .card_box__change
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .left__wrap
+        margin-left: 2px
+        margin-right: 14px
     
+            

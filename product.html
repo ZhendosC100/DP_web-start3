@@ -172,27 +172,37 @@
             <img src="img/product/star_grey.png" alt="star" class="product__card_star">
           </div>
           <!-- /.product__card_star__box -->
-          <h4 class="product__card_change__color">Выберите цвет</h4>
-          <!-- /.product__card_change__color -->
-          <div class="product__card_change__color_box">
-            <div class="product__card_wrapper">
-                <img src="img/catalog/blue.png" alt="blue" class="product__card__color">
-                <span class="product__card__color_info">Синий</span>
-                <!-- /.product__card__color_info -->
+          <div class="card_box__change">
+            <div class="card_box__change__wrap left__wrap">
+                <h4 class="product__card_change__color">Выберите цвет</h4>
+                <!-- /.product__card_change__color -->
+                <div class="product__card_change__color_box">
+                  <div class="product__card_wrapper">
+                      <img src="img/catalog/blue.png" alt="blue" class="product__card__color">
+                      <span class="product__card__color_info">Синий</span>
+                      <!-- /.product__card__color_info -->
+                  </div>
+                  <!-- /.product__card_wrapper -->
+                  
+                  <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
+                </div>
+                <!-- /.product__card_change__color_box -->
             </div>
-            <!-- /.product__card_wrapper -->
-            
-            <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
+            <!-- /.card_box__change__wrap -->
+            <div class="card_box__change__wrap">
+                <h4 class="product__card_change__size">Выберите размер:</h4>
+                <!-- /.product__card_change__size -->
+                <div class="product__card_change__color_box">
+                  <span class="product__card__color_info_sub">XXL</span> 
+                  <!-- /.product__card__color_info -->
+                  <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
+                </div>
+                <!-- /.product__card_change__color_box -->
+            </div>
+            <!-- /.card_box__change__wrap -->
           </div>
-          <!-- /.product__card_change__color_box -->
-          <h4 class="product__card_change__size">Выберите размер:</h4>
-          <!-- /.product__card_change__size -->
-          <div class="product__card_change__color_box">
-            <span class="product__card__color_info_sub">XXL</span> 
-            <!-- /.product__card__color_info -->
-            <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
-          </div>
-          <!-- /.product__card_change__color_box -->
+          <!-- /.card_box__change -->
+          
           <div class="product__card_price__box">
               <span class="product__card_price__modi">6766.00</span> 
               <!-- /.product__card_price__modi -->
@@ -461,7 +471,7 @@
   <script src="js/swiper.min.js"></script>
   <script>
     $(document).ready(function () {
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.product_swiper-container', {
         slidesPerView: 1,
         spaceBetween: 4,
         //   width: 580,
@@ -475,8 +485,8 @@
 
         breakpoints: {
           750: {
-            spaceBetween: 4,
-            slidesPerView: 2,
+            slidesPerView: 1,
+            spaceBetween: 4
           },
           650: {
             slidesPerView: 1,

@@ -69,11 +69,11 @@
         &_availabel
             margin-bottom: 27px
             &_title
-            +regular
-            font-size: 14px
-            font-weight: 300
-            line-height: 24px
-            color: #31c657
+                +regular
+                font-size: 14px
+                font-weight: 300
+                line-height: 24px
+                color: #31c657
         &_star
             display: inline-block
             margin-right: -4px
@@ -254,5 +254,81 @@
     .left__wrap
         margin-left: 2px
         margin-right: 14px
+
+    // --------------### MEDIA max-width: 650px ###-------------------//
+
+@media (max-width: 650px)
+    .card_box__change
+        display: block
+    .product
+        &__card
+            &_btn
+                margin-bottom: 10px
+                &__box
+                    flex-wrap: wrap
+        &__arrow_prev
+            margin-left: 66px
+            z-index: 3
+        &__arrow_next
+            margin-right: 53px
+            z-index: 3
+
+    // --------------### MEDIA max-width: 611px ###-------------------//
+
+@media (max-width: 611px)
+    div.product_swiper-container
+        width: 291px
+        height: 289px
+    .product
+        &__slider
+            &_img
+                width: 226px
+                height: 225px
+                transform: translate(-72%, -46%)
+        &__card
+            margin-left: 15%
+        &__arrow_prev
+            left: -148px
+            bottom: 120px
+        &__arrow_next
+            right: -135px
+            bottom: 120px
+    
+    // --------------### MEDIA max-width: 451px ###-------------------//
+
+@media (max-width: 451px)
+    .product
+        &__slider
+            &_img
+                transform: translate(-58%, -46%)
+
+    // --------------### MEDIA max-width: 451px ###-------------------//
+
+@media (max-width: 451px)
+    .product
+        &-container
+            padding-bottom: 0px
+        &__slider
+            padding-top: 24px
+            margin-left: 0
+        &__card
+            margin-left: 0
+            &_title
+                margin-top: 21px
+            &_price__box
+                margin-top: 29px
+            &_btn
+                width: 175px
+                margin-bottom: 21px
+                &__box
+                    width: 100%
+
+    .left__wrap
+        margin-left: 0
+        margin-right: 0
+    .card_box__change
+        margin-top: -4px
+
+        
     
             

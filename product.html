@@ -340,6 +340,94 @@
     </section>
     <!-- /.section table-section -->
 
+    <section class="section goods-section">
+      <div class="container goods-container">
+        <h3 class="goods__title">Похожие товары</h3>
+        <!-- /.goods__title -->
+        <div class="goods__line"></div>
+        <!-- /.goods__line -->
+
+        <div class="goods__slider">
+            <!-- Swiper -->
+            <div class="swiper-container goods_swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide goods_swiper-slide">
+                  <div class="goods_swiper_slider_box">
+                      <img src="img/goods/goods_1.png" alt="berni" class="goods__slider_img">
+                  </div>
+                  <!-- /.goods_swiper_slider_box -->
+                  <p class="goods__slider_title">Кофта для мальчика</p>
+                  <!-- /.goods__slider_title -->
+                  <p class="goods__slider_subtitle">Submarine</p>
+                  <!-- /.goods__slider_subtitle -->
+                  <p class="goods__slider_price">₴ 210.00</p>
+                  <!-- /.goods__slider_price -->
+                </div>
+                <div class="swiper-slide goods_swiper-slide">
+                  <div class="goods_swiper_slider_box">
+                      <img src="img/goods/goods_2.png" alt="berni" class="goods__slider_img goods_coorect">
+                  </div>
+                  <!-- /.goods_swiper_slider_box -->
+                  <p class="goods__slider_title goods__slider_title_correct">Кофта для мальчика</p>
+                  <!-- /.goods__slider_title -->
+                  <p class="goods__slider_subtitle">Dino</p>
+                  <!-- /.goods__slider_subtitle -->
+                  <p class="goods__slider_price">₴ 213.00</p>
+                  <!-- /.goods__slider_price -->
+                </div>
+                <div class="swiper-slide goods_swiper-slide">
+                  <div class="goods_swiper_slider_box">
+                      <img src="img/goods/goods_3.png" alt="berni" class="goods__slider_img">
+                  </div>
+                  <!-- /.goods_swiper_slider_box -->
+                  <p class="goods__slider_title">Детская куртка</p>
+                  <!-- /.goods__slider_title -->
+                  <p class="goods__slider_subtitle">Seagulls</p>
+                  <!-- /.goods__slider_subtitle -->
+                  <p class="goods__slider_price">₴ 853.00</p>
+                  <!-- /.goods__slider_price -->
+                </div>
+                <div class="swiper-slide goods_swiper-slide">
+                  <div class="goods_swiper_slider_box">
+                      <img src="img/goods/goods_4.png" alt="berni" class="goods__slider_img">
+                  </div>
+                  <!-- /.goods_swiper_slider_box -->
+                  <p class="goods__slider_title">Куртка для девочки</p>
+                  <!-- /.goods__slider_title -->
+                  <p class="goods__slider_subtitle">Flowers</p>
+                  <!-- /.goods__slider_subtitle -->
+                  <p class="goods__slider_price">₴ 853.00</p>
+                  <!-- /.goods__slider_price -->
+                </div>
+                <div class="swiper-slide goods_swiper-slide">
+                    <div class="goods_swiper_slider_box">
+                        <img src="img/goods/goods_5.png" alt="berni" class="goods__slider_img">
+                    </div>
+                    <!-- /.goods_swiper_slider_box -->
+                    <p class="goods__slider_title">Куртка для девочки</p>
+                    <!-- /.goods__slider_title -->
+                    <p class="goods__slider_subtitle">Stars</p>
+                    <!-- /.goods__slider_subtitle -->
+                    <p class="goods__slider_price">₴ 1220.00</p>
+                    <!-- /.goods__slider_price -->
+                  </div>
+              </div>
+            </div>
+            <div class="goods_arrows">
+              <div class="goods__arrow_prev"></div>
+              <!-- /.product__arrow_prev -->
+              
+              <div class="goods__arrow_next"></div>
+              <!-- /.product__arrow_next -->
+            </div>
+          </div>
+          <!-- /.product__slider -->
+
+      </div>
+      <!-- /.container goods-container -->
+    </section>
+    <!-- /.section goods-section -->
+
     <section class="section benefits-section">
       <div class="container benefits-container">
         <div class="benefits__box regard">
@@ -587,6 +675,35 @@
         navigation: {
           nextEl: '.product__arrow_next',
           prevEl: '.product__arrow_prev',
+        },
+
+        breakpoints: {
+          750: {
+            slidesPerView: 1,
+            spaceBetween: 4
+          },
+          611: {
+            spaceBetween: 30,
+            width: 270
+          },
+          // 320: {
+          //   slidesPerView: 1,
+          //   spaceBetween: 10,
+          // }
+        }
+
+      });
+
+      var swiper = new Swiper('.goods_swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 25,
+        width: 1140,
+        slidesPerGroup: 1,
+        loop: true,
+        // loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.goods__arrow_next',
+          prevEl: '.goods__arrow_prev',
         },
 
         breakpoints: {

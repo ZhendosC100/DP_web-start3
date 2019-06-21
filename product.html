@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <title>Product</title>
+</head>
+
+<body>
+  <!-- ### Navbar ### -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-info">
+        <img src="img/navbar/phone.png" alt="phone" class="navbar-info__img">
+        <div class="navbar-info__numbers">
+          <span class="navbar-info__numbers_tel">(987) 188 08 08</span>
+          <span class="navbar-info__numbers_tel">(968) 355 05 05</span>
+        </div>
+        <!-- /.navbar-info__numbers -->
+        <button class="btn navbar-info__btn" title="call me">Перезвоните мне</button>
+        <!-- /.btn navbar-info__btn -->
+      </div>
+      <!-- /.navbar-info -->
+      <div class="navbar-logo">
+        <img src="img/navbar/logo.png" alt="logo" class="navbar-logo_img">
+      </div>
+      <!-- /.navbar-logo -->
+      <div class="navbar-client">
+        <div class="icon">
+          <img src="img/navbar/dress.png" alt="dress" class="icon__img dress_correct">
+          <p class="icon__info">Вход</p>
+        </div>
+        <div class="icon heart">
+          <img src="img/navbar/heart.png" alt="heart" class="icon__img heart_correct">
+          <p class="icon__info">Избранное</p>
+        </div>
+        <div class="icon">
+          <img src="img/navbar/basket.png" alt="basket" class="icon__img bas_correct">
+          <p class="icon__info">Корзина</p>
+          <p class="circle">4</p>
+          <!-- /.circle -->
+        </div>
+      </div>
+      <!-- /.navbar-client -->
+    </div>
+    <!-- /.container navbar-container -->
+    <div class="navbar-menu">
+      <div class="container menu-container">
+        <div class="menu__hamburger">
+          <a href="catalog.html">
+            <img src="img/navbar/menu_humburger.png" alt="menu__hamburger" class="menu__hamburger_img">
+          </a>
+
+        </div>
+        <!-- /.menu__hamburger -->
+        <div class="menu-wrapper">
+          <div class="menu__list_one">
+            <p class="menu__list_text">Одежда</p>
+            <!-- /.menu__list_text -->
+            <img src="img/navbar/menu_arrow.png" alt="menu_arrow" class="menu__list_arrow">
+          </div>
+          <!-- /.menu__list_one -->
+          <div class="menu__list_two">
+            <p class="menu__list_text">Текстиль</p>
+            <!-- /.menu__list_text -->
+            <img src="img/navbar/menu_arrow.png" alt="menu_arrow" class="menu__list_arrow">
+          </div>
+          <!-- /.menu__list_two -->
+          <div class="menu__list_three">
+            <p class="menu__list_text">Школьная форма для девочек</p>
+            <!-- /.menu__list_text -->
+            <img src="img/navbar/menu_arrow.png" alt="menu_arrow" class="menu__list_arrow">
+          </div>
+          <!-- /.menu__list_three -->
+        </div>
+        <!-- /.menu-wrapper -->
+        <div class="form-wrapper">
+          <form action="#" class="menu-form">
+            <input type="text" class="menu-form_input" placeholder="Что Вы хотите найти?">
+            <button class="menu-form_btn">
+              <img src="img/navbar/glass.png" alt="glass" class="menu-form_btn__glass">
+            </button>
+            <!-- /.menu-form_btn -->
+          </form>
+          <!-- /.menu-form -->
+        </div>
+      </div>
+      <!-- /.container menu-container -->
+    </div>
+    <!-- /.navbar-menu -->
+  </nav>
+  <!-- /.navbar -->
+
+  <main>
+    <nav class="cat_nav product__cat_nav">
+      <div class="container cat_nav-container">
+        <a href="index.html" class="cat_nav__link" title="Main page">
+          <span class="cat_nav__link_info">Главная</span>
+          <img src="img/catalog/link_arrow.png" alt="link_arrow" class="cat_nav__link_img">
+        </a>
+        <a href="#" class="cat_nav__link">
+          <span class="cat_nav__link_info">Одежда и обувь</span>
+          <img src="img/catalog/link_arrow.png" alt="link_arrow" class="cat_nav__link_img">
+        </a>
+        <a href="#" class="cat_nav__link">
+          <span class="cat_nav__link_info">Мальчикам 2-14 лет</span>
+        </a>
+      </div>
+      <!-- /.container cat_nav-container -->
+    </nav>
+
+    <section class="section product-section">
+      <div class="container product-container">
+        <div class="product__slider">
+          <!-- Swiper -->
+          <div class="swiper-container product_swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product_swiper-slide">
+                <img src="img/product/berni.png" alt="berni" class="product__slider_img">
+              </div>
+              <div class="swiper-slide product_swiper-slide">
+                <img src="img/product/berni.png" alt="berni" class="product__slider_img">
+              </div>
+              <div class="swiper-slide product_swiper-slide">
+                <img src="img/product/berni.png" alt="berni" class="product__slider_img">
+              </div>
+              <div class="swiper-slide product_swiper-slide">
+                <img src="img/product/berni.png" alt="berni" class="product__slider_img">
+              </div>
+            </div>
+          </div>
+          <div class="product_arrows">
+            <div class="product__arrow_prev"></div>
+            <!-- /.product__arrow_prev -->
+            <div class="product__slide_preview"><img src="img/product/p_sl_1.png" alt="p_sl" class="product__slide_preview__img"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__slide_preview"><img src="img/product/p_sl_2.png" alt="p_sl" class="product__slide_preview__img"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__slide_preview"><img src="img/product/p_sl_3.png" alt="p_sl" class="product__slide_preview__img"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__slide_preview"><img src="img/product/p_sl_4.png" alt="p_sl" class="product__slide_preview__img"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__slide_preview"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__slide_preview"></div>
+            <!-- /.product__slide_preview -->
+            <div class="product__arrow_next"></div>
+            <!-- /.product__arrow_next -->
+          </div>
+        </div>
+        <!-- /.product__slider -->
+        <div class="product__card">
+          <h3 class="product__card_title">Кофта Donkey Jumping Beans</h3>
+          <!-- /.product__card_title -->
+          <div class="product__card_availabel">
+            <span class="product__card_article">Артикул: 239045</span> 
+            <!-- /.article -->
+            <span class="product__card_availabel_title">Есть в наличии</span> 
+            <!-- /.availabel -->
+          </div>
+          <!-- /.product__card_availabel -->
+          <div class="product__card_star__box">
+            <img src="img/product/star_bright.png" alt="star" class="product__card_star">
+            <img src="img/product/star_bright.png" alt="star" class="product__card_star">
+            <img src="img/product/star_bright.png" alt="star" class="product__card_star">
+            <img src="img/product/star_bright.png" alt="star" class="product__card_star">
+            <img src="img/product/star_grey.png" alt="star" class="product__card_star">
+          </div>
+          <!-- /.product__card_star__box -->
+          <h4 class="product__card_change__color">Выберите цвет</h4>
+          <!-- /.product__card_change__color -->
+          <div class="product__card_change__color_box">
+            <div class="product__card_wrapper">
+                <img src="img/catalog/blue.png" alt="blue" class="product__card__color">
+                <span class="product__card__color_info">Синий</span>
+                <!-- /.product__card__color_info -->
+            </div>
+            <!-- /.product__card_wrapper -->
+            
+            <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
+          </div>
+          <!-- /.product__card_change__color_box -->
+          <h4 class="product__card_change__size">Выберите размер:</h4>
+          <!-- /.product__card_change__size -->
+          <div class="product__card_change__color_box">
+            <span class="product__card__color_info_sub">XXL</span> 
+            <!-- /.product__card__color_info -->
+            <img src="img/catalog/arrow_down.png" alt="arrow_down" class="product__card_change__arrow">
+          </div>
+          <!-- /.product__card_change__color_box -->
+          <div class="product__card_price__box">
+              <span class="product__card_price__modi">6766.00</span> 
+              <!-- /.product__card_price__modi -->
+              <span class="product__card_price">5984.00</span> 
+              <!-- /.product__card_price -->
+          </div>
+          <!-- /.product__card_price__box -->
+          <div class="product__card_btn__box">
+            <button class="product__card_btn">Купить</button>
+            <!-- /.product__card_btn -->
+            <div class="product__card_heart__box">
+              <img src="img/product/heart.png" alt="heart" class="product__card_heart">
+              <span class="product__card_heart__info">В избранное</span> 
+              <!-- /.product__card_heart__info -->
+            </div>
+            <!-- /.product__card_heart__box -->
+          </div>
+          <!-- /.product__card_btn__box -->
+          <div class="product__card_ss__box">
+            <img src="img/product/fb.png" alt="fb" class="product__card_ss">
+            <img src="img/product/vk.png" alt="vk" class="product__card_ss">
+            <img src="img/product/instagram.png" alt="instagram" class="product__card_ss">
+          </div>
+          <!-- /.product__card_ss__box -->
+        </div>
+        <!-- /.product__card -->
+      </div>
+      <!-- /.container product-container -->
+    </section>
+    <!-- /.section product-section -->
+
+    <section class="section benefits-section">
+      <div class="container benefits-container">
+        <div class="benefits__box regard">
+
+          <img src="img/benefits/regard.png" alt="regard" class="benefits__wrapper_img regard_img">
+
+          <p class="benefits__info regard__info">15 лет в оффлайне и 5 лет в интернете</p>
+          <!-- /.benefits__info -->
+        </div>
+        <!-- /.benefits__box -->
+        <div class="benefits__box bag">
+          <img src="img/benefits/bag.png" alt="bag" class="benefits__wrapper_img bag_img">
+          <p class="benefits__info bag__info">2 недели на обмен и возврат товара</p>
+          <!-- /.benefits__info -->
+        </div>
+        <!-- /.benefits__box -->
+        <div class="benefits__box box">
+          <img src="img/benefits/box.png" alt="box" class="benefits__wrapper_img box_img">
+          <p class="benefits__info box__info">Товар проверяем перед отправкой</p>
+          <!-- /.benefits__info -->
+        </div>
+        <!-- /.benefits__box -->
+        <div class="benefits__box gift">
+          <img src="img/benefits/gift.png" alt="gift" class="benefits__wrapper_img gift_img">
+          <p class="benefits__info gift__info">Накопительные скидки, подарки и акции!</p>
+          <!-- /.benefits__info -->
+        </div>
+        <!-- /.benefits__box -->
+        <div class="benefits__box auto">
+          <img src="img/benefits/auto.png" alt="auto" class="benefits__wrapper_img auto_img">
+          <p class="benefits__info auto__info">Бесплатная доставка от 1000 грн по Украине</p>
+          <!-- /.benefits__info -->
+        </div>
+        <!-- /.benefits__box -->
+      </div>
+      <!-- /.container benefits-container -->
+    </section>
+    <!-- /.section benefits-section -->
+
+  </main>
+
+  <footer class="footer footer-section">
+    <div class="container footer-container">
+      <div class="footer__info_box contact">
+        <h3 class="footer__title contact__title">Свяжитесь с нами</h3>
+        <!-- /.contact__title -->
+        <a href="tel:+79871880808" class="contact__link contact__tel">+ 7 987 188 08 08</a>
+        <!-- /.contact__tel -->
+        <button class="contact__btn" title="Call me">Перезвоните мне</button>
+        <!-- /.contact__btn -->
+        <a href="" class="contact__link contact__blog">БЛОГ</a>
+        <!-- /.contact__link -->
+        <a href="" class="contact__link">НОВОСТИ Блога</a>
+        <!-- /.contact__link -->
+        <a href="" class="contact__link">ОТЗЫВЫ</a>
+        <!-- /.contact__link -->
+      </div>
+      <!-- /.footer__info_box -->
+      <div class="footer__info_box help">
+        <h3 class="footer__title help__title">Помощь</h3>
+        <!-- /.footer__title help__title -->
+        <a href="#" class="help__info">Условия доставки</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info">Условия оплаты</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info">Условия возврата</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info help__garranty">Гарантия</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info">Как применить промокод</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info">Вернуть товар. Инструкция</a>
+        <!-- /.help__info -->
+        <a href="#" class="help__info">Отследить посылку</a>
+        <!-- /.help__info -->
+      </div>
+      <!-- /.footer__info_box -->
+      <div class="footer__join_wrapper">
+        <div class="footer__info_box cabinet">
+          <h3 class="footer__title cabinet__title">Мой кабинет</h3>
+          <!-- /.footer__title cabinet__title -->
+          <a href="#" class="cabinet__info">Личный Кабинет</a>
+          <!-- /.cabinet__info -->
+          <a href="#" class="cabinet__info">История заказов</a>
+          <!-- /.cabinet__info -->
+          <a href="#" class="cabinet__info">Избранное</a>
+          <!-- /.cabinet__info -->
+          <h3 class="footer__title cabinet__subtitle">Быстрая доставка</h3>
+          <!-- /.footer__title cabinet__subtitle -->
+          <div class="cabinet__logo"><img src="img/footer/nova-poshta-logo.png" alt="post" class="cabinet__logo_img">
+          </div>
+          <!-- /.cabinet__logo -->
+        </div>
+        <!-- /.footer__info_box -->
+        <div class="footer__info_box join">
+          <h3 class="footer__title join__title">Добавляйся к нам</h3>
+          <!-- /.footer__title join__title -->
+          <div class="join__social_wrapper">
+            <div class="join__social_img join__vk" title="VK">
+              <div class="join__comment_vk">
+                <p class="join__like">Мне нравится</p>
+                <!-- /.join__like -->
+                <p class="join_amount">3654</p>
+                <!-- /.amount -->
+              </div>
+              <!-- /.join__comment-vk -->
+            </div>
+            <!-- /.join__social_img -->
+            <div class="join__social_img join__facebook" title="Facebook">
+              <div class="join__comment_fb">
+                <p class="join__like">Мне нравится</p>
+                <!-- /.join__like -->
+                <p class="join_amount">3654</p>
+                <!-- /.amount -->
+              </div>
+              <!-- /.join__comment-fb -->
+            </div>
+            <!-- /.join__social_img -->
+            <div class="join__social_img join__insta" title="Instagram">
+              <div class="join__comment_inst">
+                <p class="join__like">Мне нравится</p>
+                <!-- /.join__like -->
+                <p class="join_amount">3654</p>
+                <!-- /.amount -->
+              </div>
+              <!-- /.join__comment-inst -->
+            </div>
+            <!-- /.join__social_img -->
+          </div>
+          <!-- /.join__social_wrapper -->
+        </div>
+        <!-- /.footer__info_box -->
+      </div>
+      <!-- /.footer__join_wrapper -->
+    </div>
+    <!-- /.footer-container -->
+    <p class="footer__rights">&copy; www.nadejda.com 2008-2017. Все права защищены.</p>
+    <!-- /.footer__rights -->
+  </footer>
+  <!-- /.footer footer-section -->
+
+  <!-- ### Modals ### -->
+
+  <!-- aside basket -->
+  <aside class="basket">
+    <div class="basket-header">
+      <span class="basket-header__title">Товар добавлен корзину</span>
+      <span class="close basket-header__close" title="close">&times</span>
+    </div>
+    <!-- /.basket-header -->
+
+    <div class="basket-main">
+      <div class="main__box_img">
+        <img src="img/modal/modal_basket_1.jpg" alt="goods">
+      </div>
+      <!-- /.main__box_img -->
+      <div class="main__box_info">
+
+        <div class="main__box_wrapper">
+          <div class="main__box_info__name">
+            <span class="main__title">Наименование:</span>
+            <!-- /.main__title -->
+            <div class="main__value">Куртка для девочки Stars</div>
+            <!-- /.main__value -->
+          </div>
+          <!-- /.main__box_info__name -->
+          <div class="main__box_info__attrubute">
+            <span class="main__title">Свойства:</span>
+            <!-- /.main__title -->
+            <div class="main__value">122, Зеленный</div>
+            <!-- /.main__value -->
+          </div>
+          <!-- /.main__box_info__attrubute -->
+          <div class="main__box_info__number">
+            <span class="main__title">Кол-во:</span>
+            <!-- /.main__title -->
+            <div class="main__value">1</div>
+            <!-- /.main__value -->
+          </div>
+          <!-- /.main__box_info__number -->
+          <div class="main__box_info__price">
+            <span class="main__title">Стоимость:</span>
+            <!-- /.main__title -->
+            <div class="main__value">894 грн.</div>
+            <!-- /.main__value -->
+          </div>
+          <!-- /.main__box_info__price -->
+          <div class="main__box_info__error">
+            <img src="img/modal/close_red.svg" alt="close_icon" class="main__box_info__img" title="cancel">
+          </div>
+          <!-- /.main__box_info__error -->
+        </div>
+
+        <div class="main__box_footer">
+          <p class="main__box_footer__info">товаров в корзине: <span class="num_color">2</span></p>
+          <!-- /.main__box_footer__info -->
+        </div>
+        <!-- /.main__box_footer -->
+
+      </div>
+      <!-- /.main__box_info -->
+    </div>
+    <!-- /.basket-main -->
+
+    <div class="basket-footer">
+      <div class="basket__total">
+        <p class="basket__total_info">Итого, к оплате:<span class="total_color">894 грн</span></p>
+        <!-- /.basket__total_info -->
+        <div class="basket__total_btns">
+          <button class="basket__continue btn">Продолжить покупки</button>
+          <!-- /.basket__continue btn -->
+          <button class="basket__end btn">Оформить заказ</button>
+          <!-- /.basket__end btn -->
+        </div>
+        <!-- /.basket__total_btns -->
+      </div>
+      <!-- /.basket__total -->
+    </div>
+    <!-- /.basket-footer -->
+  </aside>
+  <aside></aside>
+  <aside></aside>
+  <aside></aside>
+  <aside></aside>
+
+  <!-- ### Aside shadow ### -->
+  <div class="aside_shadow"></div>
+
+
+  <!-- ### Scripts ### -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+  <script src="js/main.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 4,
+        //   width: 580,
+        slidesPerGroup: 1,
+        loop: true,
+        // loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.product__arrow_next',
+          prevEl: '.product__arrow_prev',
+        },
+
+        breakpoints: {
+          750: {
+            spaceBetween: 4,
+            slidesPerView: 2,
+          },
+          650: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
+        }
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>

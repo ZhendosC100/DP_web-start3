@@ -1,0 +1,167 @@
+.product
+    &-container
+        display: flex
+    &__cat_nav
+        padding-bottom: 28px
+    &_swiper-container
+        display: flex
+        margin-left: 0
+        width: 654px
+        height: 650px
+        border: 1px solid #e8e8e8
+        z-index: 5
+    &__slider_img
+        margin-left: 50%
+        margin-top: 50%
+        transform: translate(-51%, -52%)
+    &__slide_preview
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 4px
+        width: 98px
+        height: 109px
+        border: 1px solid #e8e8e8
+        background-color: #ffffff
+        &:nth-child(3)
+            border: 1px solid $text-color
+        &:nth-child(7)
+            margin-right: 0
+    &_arrows
+        display: flex
+        align-items: center
+        margin-top: 18px
+        margin-bottom: 65px
+    &__arrow_prev
+        width: 25px 
+        height: 109px 
+        background: url('../img/product/p_arrow_left.png') no-repeat center
+        outline: none
+        &:hover
+            cursor: pointer
+    &__arrow_next
+        width: 25px 
+        height: 109px 
+        background: url('../img/product/p_arrow_right.png') no-repeat center
+        outline: none
+        &:hover
+            cursor: pointer
+    &__card
+        width: 380px
+        height: 540px
+        margin-left: 55px
+        margin-top: -3px
+        &_title
+            margin-bottom: 18px
+            +semibold
+            font-size: 21px
+            font-weight: 400
+            line-height: 21px
+            color: $text-color
+        &_article
+            padding-right: 28px
+            +regular
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+            color: #898989
+        &_availabel
+            margin-bottom: 27px
+            &_title
+            +regular
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+            color: #31c657
+        &_star
+            display: inline-block
+            margin-right: -4px
+        &_wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 80px
+        &_change
+            &__color
+                margin-bottom: 15px
+                +semibold
+                font-size: 16px
+                font-weight: 700
+                line-height: 17px
+                color: $text-color
+                &_box
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding-left: 13px
+                    padding-right: 15px
+                    width: 361px
+                    height: 51px
+                    border: 1px solid #95dbf1
+                    background-color: #ffffff
+            &__size
+                margin-top: 18px
+                margin-bottom: 14px
+        &__color_info
+            +regular
+            font-size: 14px
+            font-weight: 300
+            line-height: 15px
+            opacity: 0.7
+            color: #242021
+            &_sub
+                padding-left: 4px
+        &_price
+            +semibold
+            font-size: 30px
+            font-weight: 400
+            line-height: 31.03px
+            letter-spacing: 0.93px
+            color: $text-color
+            &__box
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 250px
+                margin-top: 37px
+                margin-bottom: 31px
+            &__modi
+                text-decoration: line-through
+                +semibold
+                font-size: 26px
+                font-weight: 400
+                line-height: 31.03px
+                letter-spacing: 0.8px
+                color: #737373
+        &_btn
+            width: 176px
+            height: 49px
+            +semibold
+            font-size: 16px
+            font-weight: 400
+            line-height: 18px
+            color: white
+            background-color: $main-color
+            &__box
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding-right: 37px
+                margin-bottom: 44px
+        &_heart
+            &__box
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 138px
+            &__info
+                padding-bottom: 9px
+                padding-right: 8px
+                +semibold
+                font-size: 14px
+                font-weight: 400
+                line-height: 21px
+        &_ss
+            margin-right: 4px
+            
+    

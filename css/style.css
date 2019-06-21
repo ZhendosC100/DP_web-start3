@@ -2331,7 +2331,7 @@ span.swiper-pagination-bullet-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 .product__cat_nav {
@@ -2798,6 +2798,103 @@ span.swiper-pagination-bullet-active {
   .card_box__change {
     margin-top: -4px;
   }
+}
+
+.inform-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -2px;
+  margin-bottom: 17px;
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid #393939;
+}
+
+.inform-nav__info {
+  padding: 0 32px;
+}
+
+.inform-nav__info_text {
+  display: block;
+  padding-bottom: 23px;
+  font-family: "OpenSans-Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #393939;
+}
+
+.inform-nav__info_text:hover {
+  cursor: pointer;
+  color: #00b5ee;
+  border-bottom: 3px solid #00b5ee;
+}
+
+.inform-nav__info_charact {
+  padding-right: 39px;
+  padding-left: 9px;
+}
+
+.inform-nav__info_foto {
+  padding: 0 10px;
+  padding-right: 32px;
+}
+
+.inform-nav__info_pay {
+  padding: 0 10px;
+  padding-right: 31px;
+}
+
+.inform-nav__info_divel {
+  padding: 0 10px;
+}
+
+.table {
+  margin-bottom: 50px;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #666;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table tr {
+  border-bottom: 1px solid #e6ecf3;
+}
+
+.table tr td {
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
+
+.table tr td:first-child {
+  padding-left: 32px;
+  width: 242px;
+}
+
+.table tr td:nth-child(2) {
+  font-family: "OpenSans-Regular";
+  color: #393939;
+  width: 276px;
+}
+
+.table tr td:nth-child(2n) {
+  font-weight: 700;
+}
+
+.table tr td:nth-child(3) {
+  width: 210px;
 }
 
 .basket {

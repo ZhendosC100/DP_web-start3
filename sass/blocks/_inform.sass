@@ -63,4 +63,44 @@
             &:nth-child(3)
                 width: 210px
 
+    // --------------### MEDIA max-width: 950px ###-------------------//
+
+@media (max-width: 950px)
+    .inform
+        &-nav
+            &__info
+                &_descr
+                    padding-right: 4px
+                &_charact
+                    padding-right: 6px
+                    padding-left: 9px
+                &_foto
+                    padding: 0 10px
+                    padding-right: 6px
+                &_pay
+                    padding: 0 10px
+                    padding-right: 6px
+                &_divel
+                    padding-right: 6px
+                &_feedback
+                    padding-right: 6px
+                    padding-left: 10px
+    .table tr td
+        &:nth-child(3), &:nth-child(4)
+            display: none
+
+    // --------------### MEDIA max-width: 750px ###-------------------//
+
+@media (max-width: 750px)
+    .inform
+        &-nav
+            margin-top: 19px
+            margin-bottom: 7px
+    .table tr td
+        padding-left: 44px
+        &:first-child
+            padding-left: 0px
+            padding-top: 12px
+            padding-bottom: 19px
+
     

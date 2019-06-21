@@ -2897,6 +2897,49 @@ span.swiper-pagination-bullet-active {
   width: 210px;
 }
 
+@media (max-width: 950px) {
+  .inform-nav__info_descr {
+    padding-right: 4px;
+  }
+  .inform-nav__info_charact {
+    padding-right: 6px;
+    padding-left: 9px;
+  }
+  .inform-nav__info_foto {
+    padding: 0 10px;
+    padding-right: 6px;
+  }
+  .inform-nav__info_pay {
+    padding: 0 10px;
+    padding-right: 6px;
+  }
+  .inform-nav__info_divel {
+    padding-right: 6px;
+  }
+  .inform-nav__info_feedback {
+    padding-right: 6px;
+    padding-left: 10px;
+  }
+  .table tr td:nth-child(3), .table tr td:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .inform-nav {
+    margin-top: 19px;
+    margin-bottom: 7px;
+  }
+  .table tr td {
+    padding-left: 44px;
+  }
+  .table tr td:first-child {
+    padding-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 19px;
+  }
+}
+
 .basket {
   display: none;
   position: fixed;

@@ -35,8 +35,12 @@
             &_divel
                 padding: 0 10px
     
-.table 
+.table
     margin-bottom: 50px
+    &_hidden
+        display: none
+        font-weight: 700
+        padding-left: 5px
     table
         border-collapse: collapse
         width: 100%
@@ -96,11 +100,57 @@
         &-nav
             margin-top: 19px
             margin-bottom: 7px
-    .table tr td
-        padding-left: 44px
-        &:first-child
-            padding-left: 0px
-            padding-top: 12px
-            padding-bottom: 19px
+    .table tr
+        td
+            padding-left: 44px
+            &:first-child
+                padding-left: 0px
+                padding-top: 12px
+                padding-bottom: 19px
+
+    // --------------### MEDIA max-width: 650px ###-------------------//
+
+@media (max-width: 650px)
+
+    .inform
+            &-nav
+                &__info
+                    &_descr
+                        padding-left: 48px
+                        padding-right: 4px
+                    &_charact
+                        padding-right: 6px
+                        padding-left: 9px
+                    &_foto
+                        padding: 0 10px
+                        padding-right: 6px
+                    &_pay
+                        display: none
+                    &_divel
+                        display: none
+                    &_feedback
+                        display: none
+
+    // --------------### MEDIA max-width: 435px ###-------------------//
+
+@media (max-width: 435px)
+    .inform
+            &-nav
+                &__info
+                    &_descr
+                        display: none
+                    &_charact
+                        margin: 0 auto
+                    &_foto
+                       display: none
+    .table
+        &_hidden
+            display: inline
+        tr td
+            &:nth-child(2)
+                display: none
+            &:first-child
+                padding-bottom: 17px
+
 
     

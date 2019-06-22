@@ -16,7 +16,17 @@
     &_swiper
         &-container
             display: block
+        &-slide
+            width: 208px
+            // height: 306px
+            +regular
+            text-align: center
+            font-size: 15px
+            font-weight: 700
+            line-height: 18px
+            border: 1px solid #e8e8e8
     &__slider
+        position: relative
         &_box
             width: 195px
             height: 186px
@@ -48,12 +58,130 @@
     &_coorect
         margin-top: 8px
 
-div.goods_swiper-slide
-    width: 208px
-    height: 306px
-    +regular
-    text-align: center
-    font-size: 15px
-    font-weight: 700
-    line-height: 18px
-    border: 1px solid #e8e8e8
+    .goods_swiper_slider_box
+        width: 208px
+    // --------------### MEDIA max-width: 750px ###-------------------//
+
+@media (max-width: 750px)
+    div.goods_swiper_slider_box
+        width: 208px
+    div.goods_swiper-container
+        width: 470px
+    // div.goods_swiper-slide
+    //     width: 208px
+    //     height: 306px
+    .goods
+        &-container
+            padding-bottom: 38px
+        &__title
+            margin-top: -12px
+            margin-bottom: 10px
+            font-size: 20px
+            font-weight: 400
+            line-height: 26px
+        &_arrows
+            position: absolute
+            bottom: 0
+            left: 50%
+            z-index: 4
+            display: flex
+            transform: translate(-50%, 0)
+        &__arrow_prev
+            position: inherit
+            bottom: 128px
+            left: -308px
+            width: 48px
+            height: 48px
+            background: url('../img/sale/left-arrow.png')
+            outline: none
+            &:hover
+                cursor: pointer
+        &__arrow_next
+            position: inherit
+            bottom: 128px
+            right: -300px
+            width: 48px
+            height: 48px
+            background: url('../img/sale/right-arrow.png')
+            outline: none
+            &:hover
+                cursor: pointer
+
+    // --------------### MEDIA max-width: 650px ###-------------------//
+
+@media (max-width: 650px)
+    .goods
+        &__slider
+            margin-left: -10%
+        &__arrow_prev
+            left: -228px
+        &__arrow_next
+            right: -267px
+
+//     // --------------### MEDIA max-width: 620px ###-------------------//
+
+// @media (max-width: 620px)
+
+//     div.goods_swiper-container
+//         width: 320px
+//     .goods
+//         &__slider
+//             margin-left: 0
+//         &__arrow_prev
+//             left: -228px
+//         &__arrow_next
+//             right: -267px
+
+    // --------------### MEDIA max-width: 420px ###-------------------//
+
+@media (max-width: 620px)
+    div.goods_swiper-container
+        width: 320px
+    .goods
+        &__slider
+            margin-left: 0
+        &__arrow_prev
+            left: -192px
+        &__arrow_next
+            right: -192px
+
+    // --------------### MEDIA max-width: 420px ###-------------------//
+
+@media (max-width: 420px)
+    .goods
+        &__slider
+            margin-left: 0
+        &__arrow_prev
+            left: -162px
+        &__arrow_next
+            right: -162px
+
+    div.goods_swiper-container
+        width: 235px
+    div.goods_swiper-container
+        width: 230px
+        margin-left: 6%
+
+    div.goods_swiper-slide
+        width: 208px
+
+    // --------------### MEDIA max-width: 420px ###-------------------//
+
+@media (max-width: 420px)
+    .goods
+        &__title
+            margin-top: -21px
+            margin-bottom: 12px
+        &__arrow_prev
+            left: -144px
+        &__arrow_next
+            right: -144px
+        &__slider
+            &_title
+                margin-top: 15px
+    div.goods_swiper-slide
+        height: 305px
+
+
+
+    

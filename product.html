@@ -350,7 +350,7 @@
         <div class="goods__slider">
             <!-- Swiper -->
             <div class="swiper-container goods_swiper-container">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper correct_slider">
                 <div class="swiper-slide goods_swiper-slide">
                   <div class="goods_swiper_slider_box">
                       <img src="img/goods/goods_1.png" alt="berni" class="goods__slider_img">
@@ -707,18 +707,37 @@
         },
 
         breakpoints: {
+          1170: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            width: 900
+
+          },
+          870: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            width: 890
+          },
           750: {
-            slidesPerView: 1,
-            spaceBetween: 4
+            slidesPerView: 2,
+            spaceBetween: 26,
+            width: 437
+          },
+          650: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            width: 437
           },
           611: {
-            spaceBetween: 30,
-            width: 270
+            slidesPerView: 1,
+            spaceBetween: 20,
+            width: 200
           },
-          // 320: {
-          //   slidesPerView: 1,
-          //   spaceBetween: 10,
-          // }
+          450: {
+            slidesPerView: 1,
+            spaceBetween: 30 ,
+            width: 208
+          },
         }
 
       });

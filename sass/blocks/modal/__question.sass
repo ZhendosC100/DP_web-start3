@@ -1,0 +1,108 @@
+.question
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 8
+    transform: translate(-50%, -50%)
+    width: 598px
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.28)
+    border: 1px solid #f1d6da
+    background-color: #ffffff
+    &__basket-header
+        padding-right: 14px
+    &-form
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin: 0 auto
+        margin-top: 36px
+        width: 540px
+        // height: 270px
+    &__input_email
+        width: 100%
+        height: 51px
+        margin-bottom: 10px
+        padding-left: 20px
+        opacity: 0.7
+        +regular
+        color: #242021
+        font-size: 14px
+        font-weight: 300
+        line-height: 15px
+        border: 1px solid #95dbf1
+        background-color: #ffffff
+    &__input_text
+        width: 100%
+        height: 139px
+        margin-bottom: 17px
+        padding-left: 20px
+        opacity: 0.7
+        +regular
+        color: #242021
+        font-size: 14px
+        font-weight: 300
+        line-height: 15px
+        border: 1px solid #95dbf1
+        background-color: #ffffff
+    &__input_btn
+        margin-bottom: 34px
+        width: 174px
+        height: 49px
+        color: white
+        background: $main-color
+        &:hover
+            color: $text-color
+            border: 1px solid $text-color
+            background: white
+
+.active_question
+    display: flex
+    flex-wrap: wrap
+
+    // --------------### MEDIA max-width: 751px ###-------------------//
+
+@media (max-width: 751px)
+    .question
+        &__basket-header
+            padding-right: 29px
+            padding-left: 26px
+        &__input_email
+            margin-bottom: 8px
+            width: 542px
+            height: 51px
+        &__input_text
+            margin-bottom: 14px
+            width: 543px
+            height: 129px
+        &__input_btn
+            margin-bottom: 27px
+            margin-left: 25px
+        &-form
+            margin-top: 22px
+
+    // --------------### MEDIA max-width: 650px ###-------------------//
+
+@media (max-width: 650px)
+    .question
+        width: 290px
+        height: 448px
+        &__input_email
+            margin-bottom: -4px
+            width: 253px
+            height: 51px
+        &__input_text
+            width: 253px
+            height: 210px
+            margin-bottom: 6px
+        &__input_btn
+            margin-bottom: 27px
+            margin-left: 0
+        &-form
+            margin-top: -4px
+        &__basket-header
+            padding-right: 16px
+            padding-left: 17px
+            height: 55px
+
+

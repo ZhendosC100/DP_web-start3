@@ -3980,4 +3980,36 @@ span.swiper-pagination-bullet-active {
   border: 1px solid #95dbf1;
   background-color: #ffffff;
 }
+
+@media (max-width: 751px) {
+  .buy {
+    padding-bottom: 11px;
+  }
+}
+
+@media (max-width: 651px) {
+  .buy {
+    width: 290px;
+    height: 292px;
+  }
+  .buy-form {
+    margin-top: 23px;
+    width: 253px;
+  }
+  .buy__input_email {
+    margin-bottom: 11px;
+    padding-left: 18px;
+    width: 253px;
+    height: 51px;
+  }
+  .buy__input_text {
+    margin-bottom: 13px;
+    width: 253px;
+    height: 51px;
+  }
+  .buy-button {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

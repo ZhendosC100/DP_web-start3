@@ -1,0 +1,46 @@
+.name
+    position: fixed
+    top: 50%
+    left: 50%
+    display: flex
+    display: none
+    z-index: 8
+    flex-direction: column
+    align-items: center
+    padding-top: 19px
+    transform: translate(-50%, -50%)
+    width: 335px
+    height: 228px
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.28)
+    border: 1px solid #f1d6da
+    background-color: #ffffff
+    &_user
+        margin-bottom: 23px
+        +semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 17px
+        color: $text-color
+    &_cabinet
+        margin-bottom: 11px
+    &_cabinet, &_exit
+        width: 200px
+        height: 49px
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+        background-color: $main-color
+        color: white
+        &:hover
+            cursor: pointer
+            border: 1px solid $text-color
+            background-color: white
+            color: $text-color
+
+    // --------------### MEDIA max-width: 751px ###-------------------//
+
+@media (max-width: 751px)
+    .name
+        width: 290px
+        height: 228px
+    

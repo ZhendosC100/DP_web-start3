@@ -184,6 +184,10 @@ a {
   margin-left: -101px;
 }
 
+.navbar-logo:hover {
+  cursor: pointer;
+}
+
 .navbar-client {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,6 +227,10 @@ a {
   font-weight: 400;
   line-height: 21px;
   color: #393939;
+}
+
+.icon__img:hover {
+  cursor: pointer;
 }
 
 .bas_correct {
@@ -4010,6 +4018,70 @@ span.swiper-pagination-bullet-active {
   .buy-button {
     margin-left: 0;
     margin-bottom: 0;
+  }
+}
+
+.name {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  z-index: 8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 19px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 335px;
+  height: 228px;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);
+  border: 1px solid #f1d6da;
+  background-color: #ffffff;
+}
+
+.name_user {
+  margin-bottom: 23px;
+  font-family: "OpenSans-Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #393939;
+}
+
+.name_cabinet {
+  margin-bottom: 11px;
+}
+
+.name_cabinet, .name_exit {
+  width: 200px;
+  height: 49px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #00b5ee;
+  color: white;
+}
+
+.name_cabinet:hover, .name_exit:hover {
+  cursor: pointer;
+  border: 1px solid #393939;
+  background-color: white;
+  color: #393939;
+}
+
+@media (max-width: 751px) {
+  .name {
+    width: 290px;
+    height: 228px;
   }
 }
 /*# sourceMappingURL=style.css.map */

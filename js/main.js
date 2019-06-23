@@ -4,6 +4,7 @@ $(document).ready( function(){
         shadow = $('.aside_shadow'),
         question = $('.question'),
         buy = $('.buy'),
+        nameEnterBtn = $('.dress_correct'),
         close = $('.close');
         console.log(buy);
     $('.price_buy_btn__img').on('click', function(e){
@@ -12,12 +13,26 @@ $(document).ready( function(){
         shadow.show();
     });
 
+    $('.navbar-logo').on('click', function(){     
+	    window.location.href='index.html';
+    });
+
     $('.menu__hamburger_img').on('click', function(){
 
         if ($(window).width() <= '950'){
             $('.humburger-section').toggleClass('active_menu');
         }
         
+    });
+
+    nameEnterBtn.on('click', function(){
+        $('.name').css("display", "flex");
+        shadow.show();
+    });
+
+    $('.name_exit').on('click', function(){
+        $('.name').css("display", "none");
+        shadow.hide();
     });
 
     $('.basket__end').on('click', function(){

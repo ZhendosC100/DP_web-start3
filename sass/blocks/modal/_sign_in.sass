@@ -1,0 +1,115 @@
+.sign
+    display: none
+    position: absolute
+    top: 56%
+    left: 50%
+    z-index: 8
+    transform: translate(-50%, -44%)
+    width: 737px
+    height: 491px
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.28)
+    border: 1px solid #f1d6da
+    background-color: #ffffff
+    &_basket-header
+        padding-right: 13px
+    &__wrapper
+        display: flex
+        min-width: 100%
+        padding-left: 30px
+        padding-top: 36px
+    &_title
+        margin-top: -2px
+        +semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 17px
+        color: $text-color
+    &_form
+        width: 331px
+        margin-right: 57px
+    &__img_wrapper
+        width: 213px
+    &__input
+        width: 331px
+        height: 51px
+        margin-bottom: 11px
+        padding-left: 19px
+        border: 1px solid #95dbf1
+        background-color: #ffffff
+        opacity: 0.7
+        color: #242021
+        +regular
+        font-size: 14px
+        font-weight: 300
+        line-height: 15px
+    &_btn
+        margin-left: 76%
+        width: 174px
+        height: 49px
+        color: #ffffff
+        +semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+        background-color: $main-color
+        &:hover
+            border: 1px solid $text-color
+            color: $text-color
+            background-color: white
+    &__img
+        margin-top: 4px
+        margin-bottom: 5px
+
+    // --------------### MEDIA max-width: 751px ###-------------------//
+
+@media (max-width: 751px)
+
+    .sign
+        width: 610px
+        height: 495px
+        &__wrapper
+            padding-left: 19px
+            padding-top: 28px
+        &__input
+            width: 298px
+            height: 51px
+        &_form
+            width: 298px
+            margin-right: 47px
+        &_title
+            margin-top: -3px
+            margin-bottom: 13px
+        &__img
+            margin-bottom: 0
+        &_basket-header
+            padding-right: 27px
+            padding-left: 16px
+        &_btn
+            margin-left: 73%
+            margin-top: 7px
+
+    // --------------### MEDIA max-width: 630px ###-------------------//
+
+@media (max-width: 630px)
+    .sign
+        width: 290px
+        height: 717px
+        &_basket-header
+            padding-right: 15px
+            padding-left: 19px
+        &__wrapper
+            flex-wrap: wrap
+            padding-left: 21px
+            padding-top: 20px
+        &__input
+            width: 251px
+            height: 51px
+        &_form
+            position: relative
+            width: 251px
+        &_title
+            margin-top: 19px
+        &_btn
+            position: absolute
+            left: -59%
+            bottom: -287px

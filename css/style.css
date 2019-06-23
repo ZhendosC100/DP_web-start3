@@ -4084,4 +4084,156 @@ span.swiper-pagination-bullet-active {
     height: 228px;
   }
 }
+
+.sign {
+  display: none;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  z-index: 8;
+  -webkit-transform: translate(-50%, -44%);
+          transform: translate(-50%, -44%);
+  width: 737px;
+  height: 491px;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.28);
+  border: 1px solid #f1d6da;
+  background-color: #ffffff;
+}
+
+.sign_basket-header {
+  padding-right: 13px;
+}
+
+.sign__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  padding-left: 30px;
+  padding-top: 36px;
+}
+
+.sign_title {
+  margin-top: -2px;
+  font-family: "OpenSans-Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #393939;
+}
+
+.sign_form {
+  width: 331px;
+  margin-right: 57px;
+}
+
+.sign__img_wrapper {
+  width: 213px;
+}
+
+.sign__input {
+  width: 331px;
+  height: 51px;
+  margin-bottom: 11px;
+  padding-left: 19px;
+  border: 1px solid #95dbf1;
+  background-color: #ffffff;
+  opacity: 0.7;
+  color: #242021;
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.sign_btn {
+  margin-left: 76%;
+  width: 174px;
+  height: 49px;
+  color: #ffffff;
+  font-family: "OpenSans-Semibold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #00b5ee;
+}
+
+.sign_btn:hover {
+  border: 1px solid #393939;
+  color: #393939;
+  background-color: white;
+}
+
+.sign__img {
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 751px) {
+  .sign {
+    width: 610px;
+    height: 495px;
+  }
+  .sign__wrapper {
+    padding-left: 19px;
+    padding-top: 28px;
+  }
+  .sign__input {
+    width: 298px;
+    height: 51px;
+  }
+  .sign_form {
+    width: 298px;
+    margin-right: 47px;
+  }
+  .sign_title {
+    margin-top: -3px;
+    margin-bottom: 13px;
+  }
+  .sign__img {
+    margin-bottom: 0;
+  }
+  .sign_basket-header {
+    padding-right: 27px;
+    padding-left: 16px;
+  }
+  .sign_btn {
+    margin-left: 73%;
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 630px) {
+  .sign {
+    width: 290px;
+    height: 717px;
+  }
+  .sign_basket-header {
+    padding-right: 15px;
+    padding-left: 19px;
+  }
+  .sign__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 21px;
+    padding-top: 20px;
+  }
+  .sign__input {
+    width: 251px;
+    height: 51px;
+  }
+  .sign_form {
+    position: relative;
+    width: 251px;
+  }
+  .sign_title {
+    margin-top: 19px;
+  }
+  .sign_btn {
+    position: absolute;
+    left: -59%;
+    bottom: -287px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

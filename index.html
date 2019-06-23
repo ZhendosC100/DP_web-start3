@@ -1173,7 +1173,7 @@
     <aside class="basket">
         <div class="basket-header">
                 <span class="basket-header__title">Товар добавлен корзину</span>
-                <span class="close basket-header__close" title="close">&times</span>
+                <span class="close basket-header__close" title="close">&times;</span>
         </div>
         <!-- /.basket-header -->
 
@@ -1262,7 +1262,7 @@
     <aside class="buy">
       <div class="basket-header question__basket-header">
           <span class="basket-header__title question__basket-header__title">Купить в 1 клик</span>
-          <span class="close basket-header__close question__basket-header__close" title="close">&times</span>
+          <span class="close basket-header__close question__basket-header__close" title="close">&times;</span>
       </div>
       <form action="POST" class="form question-form buy-form">
         <input name="user_email" type="email" class="buy__input_email" placeholder="Введите Ваш e-mail">
@@ -1282,7 +1282,35 @@
       <!-- /.user_exit -->
     </aside>
     <!-- /.name -->
-    <aside></aside>
+    <aside class="sign">
+      <div class="basket-header sign_basket-header">
+        <span class="basket-header__title sign__title">Регистрация</span>
+        <span class="close basket-header__close sign_basket-header__close" title="close">&times;</span>
+      </div>
+    <!-- /.basket-header -->
+      <div class="sign__wrapper">
+        <form action="" class="sign_form">
+          <input type="text" class="input sign__input" placeholder="Имя и фамилия">
+          <input type="text" class="input sign__input" placeholder="E-mail">
+          <input type="text" class="input sign__input" placeholder="Телефон">
+          <input type="text" class="input sign__input" placeholder="Пароль">
+          <input type="text" class="input sign__input" placeholder="Повторите пароль">
+          <button class="sign_btn">Регистрация</button>
+          <!-- /.sign_btn -->
+        </form>
+        <!-- /.sign_form -->
+        <div class="sign__img_wrapper">
+          <p class="sign_title">Войти как пользователь</p>
+          <!-- /.sign_title -->
+          <img src="img/modal/inst.jpg" alt="social" class="sign__img">
+          <img src="img/modal/fb.jpg" alt="social" class="sign__img">
+          <img src="img/modal/vk.jpg" alt="social" class="sign__img">
+        </div>
+        <!-- /.sign__img_wrapper -->
+      </div>
+      <!-- /.sign__wrapper -->
+    </aside>
+    <!-- /.sign -->
 
     <!-- ### Aside shadow ### -->
     <div class="aside_shadow"></div>

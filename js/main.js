@@ -25,6 +25,11 @@ $(document).ready( function(){
         
     });
 
+    $('.name_cabinet').on('click', function(){
+        $('.sign').css("display", "block");
+        shadow.show();
+    });
+
     nameEnterBtn.on('click', function(){
         $('.name').css("display", "flex");
         shadow.show();
@@ -54,6 +59,7 @@ $(document).ready( function(){
         basket.hide();
         question.removeClass('active_question');
         $('.buy').css("display", "none");
+        $('.sign').css("display", "none");
         shadow.hide();
     });
 });

@@ -3,6 +3,7 @@ $(document).ready( function(){
         productPage = $('.sale__img'),
         shadow = $('.aside_shadow'),
         question = $('.question'),
+        buy = $('.buy'),
         close = $('.close');
     $('.price_buy_btn__img').on('click', function(e){
         e.preventDefault();
@@ -18,7 +19,11 @@ $(document).ready( function(){
         
     });
 
-    $('.contact__btn').on('click', function(){
+    $('.basket__end').on('click', function(){
+        buy.addClass('active_question');
+    });
+
+    $('.contact__btn, .navbar-info__btn').on('click', function(){
         question.addClass('active_question');
         shadow.show();
     });
@@ -30,6 +35,7 @@ $(document).ready( function(){
     close.on('click', function(){
         basket.hide();
         question.removeClass('active_question');
+        buy.removeClass('active_question');
         shadow.hide();
     });
 });

@@ -25,8 +25,15 @@ $(document).ready( function(){
         
     });
 
+    $('.heart_correct').on('click', function(e){
+        e.preventDefault;
+        $('.author').css("display", "block");
+        shadow.show();
+    });
+
     $('.name_cabinet').on('click', function(){
         $('.sign').css("display", "block");
+        $('.name').css("display", "none");
         shadow.show();
     });
 
@@ -60,6 +67,7 @@ $(document).ready( function(){
         question.removeClass('active_question');
         $('.buy').css("display", "none");
         $('.sign').css("display", "none");
+        $('.author').css("display", "none");
         shadow.hide();
     });
 });

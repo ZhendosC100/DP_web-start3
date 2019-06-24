@@ -5,8 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <title>Каталог</title>
 </head>
@@ -22,7 +39,7 @@
           <span class="navbar-info__numbers_tel">(968) 355 05 05</span>
         </div>
         <!-- /.navbar-info__numbers -->
-        <button class="btn navbar-info__btn" title="call me">Перезвоните мне</button>
+        <button class="btn navbar-info__btn" title="call me" onclick="ym(54188614, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
         <!-- /.btn navbar-info__btn -->
       </div>
       <!-- /.navbar-info -->
@@ -3622,26 +3639,26 @@
     <!-- /.basket-footer -->
   </aside>
   <aside class="question">
-    <div class="basket-header question__basket-header">
-        <span class="basket-header__title question__basket-header__title">Задать вопрос</span>
-        <span class="close basket-header__close question__basket-header__close" title="close">&times</span>
-    </div>
-    <form id="form_question" action="/mailer/smart.php" method="POST" class="form question-form">
-      <input name="user_email" type="email" class="question__input_email user_email" placeholder="Введите Ваш e-mail">
-      <div class="input_wrapper_box">
-        <input name="user_text" type="text" class="question__input_text user_text" placeholder="Введите Ваш вопрос">
+      <div class="basket-header question__basket-header">
+          <span class="basket-header__title question__basket-header__title">Задать вопрос</span>
+          <span class="close basket-header__close question__basket-header__close" title="close">&times;</span>
       </div>
-      <button class="input question__input_btn">Отправить</button>
-      <!-- /.input question__input_btn -->
-    </form>
-    <!-- /.form question-form -->
-</aside>
+      <form id="form_question" action="mailer/smart.php" method="POST" class="form question-form" onsubmit="ym(54188614, 'reachGoal', 'form'); return true;">
+        <input name="user_email" type="email" class="question__input_email user_email" placeholder="Введите Ваш e-mail">
+        <div class="input_wrapper_box">
+          <input name="user_text" type="text" class="question__input_text user_text" placeholder="Введите Ваш вопрос">
+        </div>
+        <button class="input question__input_btn">Отправить</button>
+        <!-- /.input question__input_btn -->
+      </form>
+      <!-- /.form question-form -->
+  </aside>
   <aside class="buy">
     <div class="basket-header question__basket-header">
         <span class="basket-header__title question__basket-header__title">Купить в 1 клик</span>
         <span class="close basket-header__close question__basket-header__close" title="close">&times;</span>
     </div>
-    <form action="POST" class="form question-form buy-form">
+    <form action="#" class="form question-form buy-form">
       <input name="user_email" type="email" class="buy__input_email" placeholder="Введите Ваш e-mail">
       <input name="user_text" type="text" class="buy__input_text" placeholder="Введите Ваш вопрос">
       <button class="buy-button question__input_btn">Отправить</button>
@@ -3665,7 +3682,7 @@
     </div>
   <!-- /.basket-header -->
     <div class="sign__wrapper">
-      <form action="" class="sign_form">
+      <form action="#" class="sign_form">
         <input type="text" class="input sign__input" placeholder="Имя и фамилия">
         <input type="text" class="input sign__input" placeholder="E-mail">
         <input type="text" class="input sign__input" placeholder="Телефон">
@@ -3795,8 +3812,8 @@
     });
   </script>
 
-  <script src="./js/jquery.validate.min.js"></script>
-  <script src="./js/forms.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/forms.js"></script>
 </body>
 
 </html>

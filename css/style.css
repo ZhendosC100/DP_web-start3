@@ -941,6 +941,7 @@ div.invalid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .sale__wrapper_box {

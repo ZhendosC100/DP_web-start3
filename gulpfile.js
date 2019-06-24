@@ -59,9 +59,9 @@ gulp.task('fonts', function(done){
 });
 
 gulp.task('tinypng', function (done) {
-    return gulp.src('./img/**/*.{png,jpg,jpeg}')
+    return gulp.src('img/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({
-            key: 'vfVx0MDPzxL5uydUvkxm2WCyY5wIzBT6'
+            key: 'Tl2Cno4z6Mm6FBdLhluyBW8Q5vCAv6Co'
         }))
         .pipe(gulp.dest('dist/img/'));
         done();

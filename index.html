@@ -1251,9 +1251,11 @@
             <span class="basket-header__title question__basket-header__title">Задать вопрос</span>
             <span class="close basket-header__close question__basket-header__close" title="close">&times</span>
         </div>
-        <form action="POST" class="form question-form">
-          <input name="user_email" type="email" class="question__input_email" placeholder="Введите Ваш e-mail">
-          <input name="user_text" type="text" class="question__input_text" placeholder="Введите Ваш вопрос">
+        <form id="form_question" action="/mailer/smart.php" method="POST" class="form question-form">
+          <input name="user_email" type="email" class="question__input_email user_email" placeholder="Введите Ваш e-mail">
+          <div class="input_wrapper_box">
+            <input name="user_text" type="text" class="question__input_text user_text" placeholder="Введите Ваш вопрос">
+          </div>
           <button class="input question__input_btn">Отправить</button>
           <!-- /.input question__input_btn -->
         </form>
@@ -1398,5 +1400,7 @@
         
 		});
     </script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/forms.js"></script>
 </body>
 </html>
